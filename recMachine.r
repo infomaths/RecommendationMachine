@@ -1,6 +1,6 @@
 library(readr)
 ### read data from csv file
-mydata <- read_csv("~/R/RecommendationMachine/Output.csv")
+mydata <- read_csv("Output.csv")
 
 ### remove rows where the score is not a double
 toremove <- !is.na(as.double(mydata$"review/score"[1:nrow(mydata)]))
